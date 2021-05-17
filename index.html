@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body onload="resetForm()">
+    <div class="container--main">
+      <div class="form-title">
+        <div class="form-title__text">INTERNSHIP SIGNUP FORM</div>
+        <div class="form-title__line"></div>
+      </div>
+      <div id="isFormContainerVisible">
+        <div>
+          <p>
+            Prepare for your career with a Project
+            Management,web&#8209;development,Graphic design, or Degital
+            Marketing Internship at Northern.
+          </p>
+        </div>
+        <div>
+          <form>
+            <div class="row">
+              <div class="col-sm-12 col-md-6 px-4">
+                <div class="row error-text">
+                  <div id="emailErrorText">Email is invalid</div>
+                </div>
+                <div class="row">
+                  <input
+                    id="email"
+                    type="email"
+                    class="form-control form__input"
+                    placeholder="Your Email Address *"
+                  />
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 px-4">
+                <div class="row error-text">
+                  <div id="interestErrorText">Please select any interest</div>
+                </div>
+                <div class="row">
+                  <div id="interests-response"></div>
+                  <select
+                    id="interest"
+                    name="interests"
+                    class="form-select form__input"
+                  >
+                    <option value="" disabled selected>Your Interests</option>
+                    <option value="development">Development</option>
+                    <option value="management">Management</option>
+                    <option value="graphic-design">Graphic Design</option>
+                    <option value="digital-marketing">Digital Marketing</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div>
+          <div class="row mt-4">
+            <div class="col-12">
+              <div class="d-grid gap-2">
+                <button
+                  id="submitButton"
+                  class="submit__button btn btn-block"
+                  onclick="submitForm()"
+                >
+                  Sign Up Now &#9656;
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="isThankYouCardVisible">
+        <h4>Thanks For Your Response</h4>
+        <p>
+          We will reveiw Your application and contact you for additional
+          information should your background and experience meet the
+          requirements of one of our openings.
+        </p>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
